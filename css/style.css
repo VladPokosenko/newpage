@@ -1,0 +1,194 @@
+body {
+	background: url(../resource/background.jpg); 
+	background-attachment: fixed; 
+	color:black; margin: 0; 
+	text-align: center;
+	font-family: body;}
+
+header{
+	text-align: center; 
+	height: 150px; 
+	padding-top:20px;}
+
+footer{
+	background-color: #393939;	 
+	padding: 1rem;
+	height: 60px; 
+	text-align: center; 
+	color: #878787; 
+	font-family: abeezee; 	
+}
+
+footer.Flisten{
+	background-color: #393939; 
+	background: url(../resource/footer.jpg);
+	padding: 1rem;
+	height: 60px; 
+	text-align: center; 
+	color: #878787; 
+	font-family: abeezee; 
+	border: 4px solid black;
+}
+
+table{margin: auto;}
+
+tr:hover{background-color:#ffd06a;}
+
+#content{
+	background: rgba(255, 255, 255, 0.8); 
+	background: linear-gradient(to top, rgba(175, 175, 175, 0.8), rgba(255, 255, 255, 0.8)); 
+	width: 50%; 
+	margin: 0 auto; 
+	text-align: center;
+	padding-top: 20px; 
+	padding-bottom: 20px;
+	margin-bottom:30px; 
+	margin-top:30px;
+	/*border: 1px solid white ; */ /* Белая рамка */
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#contentListen{
+	background: rgba(255, 255, 255, 0.8); 
+	background: radial-gradient(circle farthest-side at 50% 100%, rgba(175, 175, 175, 0.8), rgba(255, 255, 255, 0.8));  
+	width: 50%; 
+	margin: 0 auto; 
+	text-align: center;
+	padding-top: 20px; 
+	padding-bottom: 20px;
+	margin-bottom:30px; 
+	margin-top:30px;
+	/*border: 1px solid white ; */ /* Белая рамка */
+    border-radius: 0 20px 20px 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.block{
+  font-family: body;
+  position: relative;
+  width:100px;
+  height:50px;
+  
+  position:absolute;
+  left:50%;
+  margin-left:-50px;
+  top:150px;
+  left:387px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -5px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  
+}
+
+.listen{padding-top: 20px; 
+	width: 100px;
+    height: 40px; 
+    top: 190px;    
+    background: #fdb813;
+    border-radius: 0 20px 20px 0; 
+    position: fixed;
+    box-shadow: 0 0 5px #ffd06a;
+    cursor: pointer;
+    transition: 0.5s; 
+    font-family: body;
+}
+
+.listen:hover{width: 120px;}
+
+::selection {
+background: black;
+color: white;
+}
+
+.diamond1 {	
+	padding-top: 10px;
+	position: relative;
+	display:inline-block;
+	top:10px;
+	right:-10%;
+	width: 150px;
+  height: 150px;
+  background: black;
+  transform: rotate(-45deg);
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+
+.diamond2 {	
+	padding-top: 10px;
+	position: relative;
+	display:inline-block;
+	top:10px;
+	right:0%;
+	width: 150px;
+    height: 150px;
+    background: black;
+    transform: rotate(-45deg);
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    cursor: pointer; 
+   
+}
+
+.diamond3 {
+	padding-top: 10px;	
+	position: relative;
+	display:inline-block;
+	top:10px;
+	right:10%;
+	width: 150px;
+    height: 150px;
+    background: black;
+    transform: rotate(-45deg);
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    cursor: pointer; 
+}
+
+.textSymbol{font-family: websymbol; color:#fdb813; text-decoration: none;}
+.textOther{font-family: body; color:#fdb813; text-decoration: none;}
+.text:hover{text-shadow: 0px 0px 0.5px #ffd06a;}
+
+.textSymbol2{font-family: websymbol; color:black; text-decoration: none; }
+.textOther2{font-family: body; color:black; text-decoration: none;}
+.text:hover{text-shadow: 0px 0px 0.5px #ffd06a;}
+
+
+.diamond1:hover{	    
+            -webkit-animation: hoover_size 1s infinite;
+            
+        }
+.diamond2:hover{	    
+            -webkit-animation: hoover_size 1s infinite;
+        }
+.diamond3:hover{	    
+            -webkit-animation: hoover_size 1s infinite;
+        }
+
+@keyframes hoover_size {
+     0%   { transform: rotate(-45deg) scale(1)}
+     50%  { transform: rotate(-45deg) scale(1.05)}
+     100%   { transform: rotate(-45deg) scale(1)}
+    }
+
+.textName{}
+.textName:after{content: url('../resource/icon.png');}
+.textName:first-letter{color:red;}
+
+@font-face {
+    font-family: abeezee; /* Гарнитура шрифта */
+    src: url(../resource/fonts/abeezee.ttf); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
+    font-family: body; /* Гарнитура шрифта */
+    src: url(../resource/fonts/HelveticaNeueCyr-Medium.otf); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
+    font-family: websymbol; /* Гарнитура шрифта */
+    src: url(../resource/fonts/websymbolsligaregular.ttf); /* Путь к файлу со шрифтом */
+   }
